@@ -1,0 +1,3 @@
+word = input("")
+rev = word[::-1]
+print(rev)

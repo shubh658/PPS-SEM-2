@@ -1,0 +1,18 @@
+from itertools import permutations
+
+digit1 = input("digit1 (0-9): ")
+digit2 = input("digit2 (0-9): ")
+digit3 = input("digit3 (0-9): ")
+
+digits = digit1+digit2+digit3
+
+if len(digits) !=3 or not digits.isdigit():
+	print("Invalid")
+
+else:
+	combininations = permutations(digits)
+
+
+	for combinination in combininations:
+
+		print("".join(combinination))
